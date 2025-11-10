@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bttur15ywi3pl"]
+
+[ext_resource type="Script" uid="uid://bbjku1iqb2lhc" path="res://scripts/Game/game.gd" id="1_0i15y"]
+[ext_resource type="PackedScene" uid="uid://b5h6iv8lmggnx" path="res://scenes/tracks/monkey_meadows.tscn" id="2_jm17p"]
+[ext_resource type="PackedScene" uid="uid://bius6xu5v1dab" path="res://scenes/Monkeys/Dart/DartMonkey.tscn" id="3_fc1p2"]
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("Track")]
+script = ExtResource("1_0i15y")
+Track = NodePath("MonkeyMeadows")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="MonkeyMeadows" parent="." instance=ExtResource("2_jm17p")]
+
+[node name="Monkeys" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="DartMonkey2" parent="Monkeys" instance=ExtResource("3_fc1p2")]
+position = Vector2(19, -158)
+
+[node name="Projectiles" type="Node2D" parent="."]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2ixw6sg1wusi"]
+
+[ext_resource type="Script" uid="uid://70eaaijmtich" path="res://scenes/TEST/testscene.gd" id="1_vuqut"]
+[ext_resource type="Script" uid="uid://cdthnrosgac0d" path="res://scripts/Bloons/bloon.gd" id="2_nm8q2"]
+[ext_resource type="Script" uid="uid://bnqxa1jtf52mo" path="res://scripts/Projectiles/projectile.gd" id="3_dfblc"]
+[ext_resource type="PackedScene" uid="uid://del4u8kg8kcsg" path="res://scenes/Bloons/basic_bloon.tscn" id="3_nm8q2"]
+
+[node name="TESTSCENE" type="Node2D"]
+script = ExtResource("1_vuqut")
+
+[node name="Bloon" type="CharacterBody2D" parent="."]
+script = ExtResource("2_nm8q2")
+metadata/_custom_type_script = "uid://cdthnrosgac0d"
+
+[node name="Projectile" type="CharacterBody2D" parent="."]
+script = ExtResource("3_dfblc")
+metadata/_custom_type_script = "uid://bnqxa1jtf52mo"
+
+[node name="BasicBloon" parent="." instance=ExtResource("3_nm8q2")]
