@@ -31,7 +31,7 @@ func _process(delta: float) -> void:
 			attack()
 
 func attack():
-	AttackTimer.start()
+	AttackTimer.start(attackCooldown)
 	canAttack = false
 	base.rotation = lookMarker.rotation + 1.571
 

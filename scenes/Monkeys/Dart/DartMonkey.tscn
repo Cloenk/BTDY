@@ -1,19 +1,18 @@
-[gd_scene load_steps=6 format=3 uid="uid://bius6xu5v1dab"]
+[gd_scene load_steps=5 format=3 uid="uid://bius6xu5v1dab"]
 
 [ext_resource type="Script" uid="uid://dklh6g6ksmf2p" path="res://scripts/Monkeys/Dart/dart_monkey.gd" id="1_ih26l"]
 [ext_resource type="Texture2D" uid="uid://df04nmmcfyyqy" path="res://assets/Sprites/Monkeys/Dart/BaseApe.png" id="2_ca2q7"]
 [ext_resource type="Texture2D" uid="uid://b2ykewsivdtbd" path="res://assets/Sprites/Monkeys/circleInside.png" id="3_ih26l"]
-[ext_resource type="Texture2D" uid="uid://cojsdys6olduo" path="res://assets/Sprites/Monkeys/circleOutside.png" id="4_lwep4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ca2q7"]
 radius = 20.0
 
 [node name="DartMonkey" type="Node2D" node_paths=PackedStringArray("rangeArea", "rangeCircle", "lookMarker", "base", "AttackTimer")]
 script = ExtResource("1_ih26l")
-range = 10.0
+range = 15.0
 rangeArea = NodePath("RangeArea")
 rangeCircle = NodePath("RangeCircle")
-attackCooldown = 0.95
+attackCooldown = 0.1
 lookMarker = NodePath("LookMarker")
 base = NodePath("Base")
 AttackTimer = NodePath("AttackTimer")
@@ -37,10 +36,6 @@ z_index = -1
 [node name="inside" type="Sprite2D" parent="RangeCircle"]
 modulate = Color(0.788235, 0.788235, 0.788235, 0.588235)
 texture = ExtResource("3_ih26l")
-
-[node name="outside" type="Sprite2D" parent="RangeCircle"]
-modulate = Color(0.788235, 0.788235, 0.788235, 0.862745)
-texture = ExtResource("4_lwep4")
 
 [node name="LookMarker" type="Marker2D" parent="."]
 

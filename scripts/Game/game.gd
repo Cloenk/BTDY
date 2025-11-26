@@ -17,5 +17,5 @@ func _ready() -> void:
 	#Track.spawnBloon("white",0)
 	#Track.spawnBloon("zebra",0)
 	#Track.spawnBloon("rainbow",0)
-	Track.spawnBloon("ceramic",0)
-	#Track.spawnBloon("brick",0)
+	#Track.spawnBloon("ceramic",0)
+	Track.spawnBloon("brick",0)

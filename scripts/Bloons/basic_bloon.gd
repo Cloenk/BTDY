@@ -1,5 +1,9 @@
 extends Bloon
 
+func _process(delta: float) -> void:
+	super(delta)
+	$Label.text = str(layer)
+
 func damage(amount: float, projectile: Projectile, doPopEffect: bool, overRideCanHit: bool):
 	if canHit(projectile) or overRideCanHit:
 		var newLayer = layer - amount
@@ -23,6 +27,12 @@ func damage(amount: float, projectile: Projectile, doPopEffect: bool, overRideCa
 			if newLayer <= 10:
 				spawnExtraBloon(amount - (layer - 10),projectile,"rainbow",25)
 				spawnExtraBloon(amount - (layer - 10),projectile,"rainbow",-25)
+				delete()
+				return
+		if layer >= 21 and layer <= 40:
+			if newLayer <= 21:
+				spawnExtraBloon(amount - (layer - 10),projectile,"ceramic",25)
+				spawnExtraBloon(amount - (layer - 10),projectile,"ceramic",-25)
 				delete()
 				return
 		setLayer(newLayer)
@@ -68,10 +78,19 @@ func setLayer(newlayer: int):
 			Base.scale = Vector2(5.2,5.2)
 	if layer >= 10 and layer <= 20:
 		setStats(250,1,0,type)
-		Base.texture = load("res://assets/Sprites/Bloons/CeramicBloon.png")
 		Base.scale = Vector2(5.2,5.2)
-	if layer >= 21 and layer <= 41:
+		if layer > 10:
+			Base.texture = load("res://assets/Sprites/Bloons/CeramicBloonLast.png")
+		if layer > 14:
+			Base.texture = load("res://assets/Sprites/Bloons/CeramicBloonHalf.png")
+		if layer > 17:
+			Base.texture = load("res://assets/Sprites/Bloons/CeramicBloon.png")
+	if layer >= 21 and layer <= 40:
 		setStats(200,2,0,type)
-		Base.texture = load("res://assets/Sprites/Bloons/BrickBloon.png")
 		Base.scale = Vector2(5.3,5.3)
-		#spawn 2 ceramics
+		if layer > 23:
+			Base.texture = load("res://assets/Sprites/Bloons/BrickBloonLast.png")
+		if layer > 28:
+			Base.texture = load("res://assets/Sprites/Bloons/BrickBloonHalf.png")
+		if layer > 34:
+			Base.texture = load("res://assets/Sprites/Bloons/BrickBloon.png")

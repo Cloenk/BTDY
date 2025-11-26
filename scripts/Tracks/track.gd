@@ -45,7 +45,7 @@ func spawnBloon(bloonType: String, progress: float):
 			bloon.setLayer(20)
 		"brick":
 			bloon = basicBloonScene.instantiate()
-			bloon.setLayer(41)
+			bloon.setLayer(40)
 	bloon.progress = progress
 	follower.add_child(bloon)
 	return bloon

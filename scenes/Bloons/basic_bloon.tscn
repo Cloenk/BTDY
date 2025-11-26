@@ -19,3 +19,10 @@ texture = ExtResource("2_3qhp7")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 shape = SubResource("CircleShape2D_3qhp7")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -13.0
+offset_top = -46.0
+offset_right = 27.0
+offset_bottom = -23.0
+text = "LAYER"
