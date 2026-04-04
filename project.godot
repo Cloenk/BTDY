@@ -15,7 +15,10 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="BTDY"
+<<<<<<< Updated upstream
 run/main_scene="uid://bttur15ywi3pl"
+=======
+>>>>>>> Stashed changes
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -32,9 +35,8 @@ window/stretch/mode="viewport"
 [file_customization]
 
 folder_colors={
-"res://assets/": "red",
-"res://scenes/": "purple",
-"res://scripts/": "green"
+"res://Bloons/": "purple",
+"res://assets/": "red"
 }
 
 [global_group]
