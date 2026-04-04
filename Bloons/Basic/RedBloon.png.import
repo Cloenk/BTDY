@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdhs1b1cepoi3"
-path="res://.godot/imported/PinkBloon.png-06776691ada28b89d14d4b5835ad1b70.ctex"
+uid="uid://wsvqtnnro8pa"
+path="res://.godot/imported/RedBloon.png-b4877ddbae7061edd024f71b75641715.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Bloons/PinkBloon.png"
-dest_files=["res://.godot/imported/PinkBloon.png-06776691ada28b89d14d4b5835ad1b70.ctex"]
+source_file="res://Bloons/Basic/RedBloon.png"
+dest_files=["res://.godot/imported/RedBloon.png-b4877ddbae7061edd024f71b75641715.ctex"]
 
 [params]
 

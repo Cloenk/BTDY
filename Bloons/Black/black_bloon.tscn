@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://beofmswiqq3rg"]
+
+[ext_resource type="Script" uid="uid://dw2vsqf5u5ywj" path="res://Bloons/Bloon.gd" id="1_xwwro"]
+[ext_resource type="Script" uid="uid://crtey2lshgeu0" path="res://Bloons/Layer.gd" id="2_32oia"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="3_j2oui"]
+[ext_resource type="Texture2D" uid="uid://bk2mactrvojkq" path="res://Bloons/Black/BlackBloon.png" id="3_nwuxa"]
+[ext_resource type="Resource" uid="uid://bvbqvjgskmcbc" path="res://Bloons/Basic/PinkSpawn.tres" id="4_j2oui"]
+
+[sub_resource type="Resource" id="Resource_j2oui"]
+script = ExtResource("2_32oia")
+hpRange = Vector2(1, 1)
+speed = 1.8
+sprite = ExtResource("3_nwuxa")
+bloonsToSplit = Array[ExtResource("3_j2oui")]([ExtResource("4_j2oui"), ExtResource("4_j2oui")])
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[node name="BlackBloon" type="CharacterBody2D" unique_id=239513154 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_xwwro")
+hp = 1.0
+layers = Array[ExtResource("2_32oia")]([SubResource("Resource_j2oui")])
+sprite = NodePath("Sprite2D")
+metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1076762977]

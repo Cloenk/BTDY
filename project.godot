@@ -15,16 +15,14 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="BTDY"
-<<<<<<< Updated upstream
-run/main_scene="uid://bttur15ywi3pl"
-=======
->>>>>>> Stashed changes
+run/main_scene="uid://c0162r24872pw"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstreamrun/main_scene="uid://bttur15ywi3pl"
 
 [autoload]
 
-GlobalGame="*res://scripts/Game/GlobalGame.gd"
+Game="*uid://7wsa0nsl1t6e"
 
 [display]
 
@@ -36,7 +34,10 @@ window/stretch/mode="viewport"
 
 folder_colors={
 "res://Bloons/": "purple",
-"res://assets/": "red"
+"res://Game/": "blue",
+"res://Tracks/": "green",
+"res://assets/": "red",
+"res://monkeys/": "orange"
 }
 
 [global_group]

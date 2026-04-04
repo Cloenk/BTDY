@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk2mactrvojkq"
-path="res://.godot/imported/BlackBloon.png-476e02f8812de2e0cd2ebece98dec25b.ctex"
+uid="uid://8jb48xt0ct3m"
+path="res://.godot/imported/WhiteBloon.png-e5525927caa2d7cf13551ed10d26e57e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Bloons/BlackBloon.png"
-dest_files=["res://.godot/imported/BlackBloon.png-476e02f8812de2e0cd2ebece98dec25b.ctex"]
+source_file="res://Bloons/White/WhiteBloon.png"
+dest_files=["res://.godot/imported/WhiteBloon.png-e5525927caa2d7cf13551ed10d26e57e.ctex"]
 
 [params]
 

@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://cyxboigru2ocv"]
+
+[ext_resource type="Script" uid="uid://dw2vsqf5u5ywj" path="res://Bloons/Bloon.gd" id="1_r5j4i"]
+[ext_resource type="Script" uid="uid://crtey2lshgeu0" path="res://Bloons/Layer.gd" id="2_vpd71"]
+[ext_resource type="Texture2D" uid="uid://wsvqtnnro8pa" path="res://Bloons/Basic/RedBloon.png" id="3_2xiv8"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="3_uco6b"]
+[ext_resource type="Texture2D" uid="uid://clmjirug5fdcy" path="res://Bloons/Basic/BlueBloon.png" id="4_jm5s5"]
+[ext_resource type="Texture2D" uid="uid://smjmg2t76chk" path="res://Bloons/Basic/GreenBloon.png" id="5_gotuw"]
+[ext_resource type="Texture2D" uid="uid://cweeda6gtf1fh" path="res://Bloons/Basic/YellowBloon.png" id="6_70ukk"]
+[ext_resource type="Texture2D" uid="uid://bdhs1b1cepoi3" path="res://Bloons/Basic/PinkBloon.png" id="7_8g5nn"]
+
+[sub_resource type="Resource" id="Resource_2xiv8"]
+script = ExtResource("2_vpd71")
+hpRange = Vector2(1, 1)
+speed = 1.0
+sprite = ExtResource("3_2xiv8")
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="Resource" id="Resource_70ukk"]
+script = ExtResource("2_vpd71")
+hpRange = Vector2(2, 2)
+speed = 1.4
+sprite = ExtResource("4_jm5s5")
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="Resource" id="Resource_8g5nn"]
+script = ExtResource("2_vpd71")
+hpRange = Vector2(3, 3)
+speed = 1.8
+sprite = ExtResource("5_gotuw")
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="Resource" id="Resource_842ua"]
+script = ExtResource("2_vpd71")
+hpRange = Vector2(4, 4)
+speed = 3.2
+sprite = ExtResource("6_70ukk")
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="Resource" id="Resource_7j45o"]
+script = ExtResource("2_vpd71")
+hpRange = Vector2(5, 5)
+speed = 3.5
+sprite = ExtResource("7_8g5nn")
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[node name="BasicBloon" type="CharacterBody2D" unique_id=1251175261 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_r5j4i")
+hp = 1.0
+layers = Array[ExtResource("2_vpd71")]([SubResource("Resource_2xiv8"), SubResource("Resource_70ukk"), SubResource("Resource_8g5nn"), SubResource("Resource_842ua"), SubResource("Resource_7j45o")])
+sprite = NodePath("Sprite2D")
+metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1270699119]
