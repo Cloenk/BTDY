@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c0162r24872pw"]
+
+[ext_resource type="Script" uid="uid://6pslsdsvvaxk" path="res://Tracks/Gato/GatoTrack.gd" id="1_ia1lp"]
+[ext_resource type="Texture2D" uid="uid://dexc3lwqsgief" path="res://Screenshot from 2026-04-05 15-54-14.png" id="2_ia1lp"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="2_vr1i5"]
+[ext_resource type="Resource" uid="uid://cc1f450aam0a4" path="res://Bloons/Basic/blueSpawn.tres" id="3_rpuu0"]
+[ext_resource type="Resource" uid="uid://otmfb1cp12hr" path="res://Bloons/Basic/greenSpawn.tres" id="4_oo8pe"]
+[ext_resource type="Resource" uid="uid://bvbqvjgskmcbc" path="res://Bloons/Basic/PinkSpawn.tres" id="5_4gito"]
+[ext_resource type="Resource" uid="uid://cuow5v3ubn558" path="res://Bloons/Basic/redSpawn.tres" id="6_fbuy2"]
+[ext_resource type="Resource" uid="uid://od15id0csnb6" path="res://Bloons/Basic/YellowSpawn.tres" id="7_0k8yu"]
+[ext_resource type="Resource" uid="uid://cjbuimbmqdo1p" path="res://Bloons/Black/blackSpawn.tres" id="8_hiucn"]
+[ext_resource type="Resource" uid="uid://c10k4pk83hedx" path="res://Bloons/White/whiteSpawn.tres" id="9_k6its"]
+
+[sub_resource type="Curve2D" id="Curve2D_ia1lp"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 12, 540, 0, 0, 0, 0, 243, 540, 0, 0, 0, 0, 245, 505, 0, 0, 0, 0, 257, 473, 0, 0, 0, 0, 267, 458, 0, 0, 0, 0, 267, 442, 0, 0, 0, 0, 277, 431, 0, 0, 0, 0, 287, 413, 0, 0, 0, 0, 282, 386, 0, 0, 0, 0, 283, 366, 0, 0, 0, 0, 294, 345, 0, 0, 0, 0, 301, 326, 0, 0, 0, 0, 303, 313, 0, 0, 0, 0, 304, 298, 0, 0, 0, 0, 328, 269, 0, 0, 0, 0, 356, 253, 0, 0, 0, 0, 387, 246, 0, 0, 0, 0, 427, 247, 0, 0, 0, 0, 467, 259, 0, 0, 0, 0, 490, 281, 0, 0, 0, 0, 508, 303, 0, 0, 0, 0, 516, 324, 0, 0, 0, 0, 524, 343, 0, 0, 0, 0, 527, 395, 0, 0, 0, 0, 527, 429, 0, 0, 0, 0, 546, 440, 0, 0, 0, 0, 541, 468, 0, 0, 0, 0, 551, 503, 0, 0, 0, 0, 555, 529, 0, 0, 0, 0, 669, 525)
+}
+point_count = 30
+
+[node name="GatoTrack" type="Node2D" unique_id=1462393471 node_paths=PackedStringArray("paths")]
+script = ExtResource("1_ia1lp")
+allBloons = Array[ExtResource("2_vr1i5")]([ExtResource("3_rpuu0"), ExtResource("4_oo8pe"), ExtResource("5_4gito"), ExtResource("6_fbuy2"), ExtResource("7_0k8yu"), ExtResource("8_hiucn"), ExtResource("9_k6its")])
+paths = [NodePath("Path2D")]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1903820628]
+position = Vector2(257.75, 180.25)
+scale = Vector2(0.81537235, 1.1485623)
+texture = ExtResource("2_ia1lp")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=693217391]
+position = Vector2(-50, -194)
+curve = SubResource("Curve2D_ia1lp")

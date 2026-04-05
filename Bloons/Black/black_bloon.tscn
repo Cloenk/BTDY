@@ -9,16 +9,24 @@
 [sub_resource type="Resource" id="Resource_j2oui"]
 script = ExtResource("2_32oia")
 hpRange = Vector2(1, 1)
-speed = 1.8
+speed = 1.6
 sprite = ExtResource("3_nwuxa")
 bloonsToSplit = Array[ExtResource("3_j2oui")]([ExtResource("4_j2oui"), ExtResource("4_j2oui")])
 metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j2oui"]
+radius = 9.0
 
 [node name="BlackBloon" type="CharacterBody2D" unique_id=239513154 node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_xwwro")
 hp = 1.0
 layers = Array[ExtResource("2_32oia")]([SubResource("Resource_j2oui")])
+speed = 1.8
 sprite = NodePath("Sprite2D")
 metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1076762977]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1564475614]
+visible = false
+shape = SubResource("CircleShape2D_j2oui")

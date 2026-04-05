@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://c3fp71irx3x6l"]
+
+[ext_resource type="Texture2D" uid="uid://dwikhhp0kbp45" path="res://UI/SideBar/sideBar.png" id="1_1r4le"]
+[ext_resource type="PackedScene" uid="uid://c0162r24872pw" path="res://Tracks/Gato/GatoTrack.tscn" id="1_bk3v5"]
+[ext_resource type="Script" uid="uid://bvmgn0lm47tuu" path="res://Game/game.gd" id="1_qmv3x"]
+[ext_resource type="Texture2D" uid="uid://dmypreh71xvjq" path="res://UI/SideBar/speedButtonBase.png" id="2_jcm6v"]
+[ext_resource type="Texture2D" uid="uid://ckdi23v72uyse" path="res://UI/SideBar/PauseButton.png" id="3_fwxkx"]
+[ext_resource type="PackedScene" uid="uid://vjlohqccjwbb" path="res://UI/Slot/slot.tscn" id="5_oomkl"]
+[ext_resource type="Resource" uid="uid://c40m4b0chx57m" path="res://monkeys/Dart/dartResource.tres" id="6_buohc"]
+[ext_resource type="FontFile" uid="uid://ccib0iwsfj7nk" path="res://assets/fonts/edit-undo.brk.ttf" id="7_kul4i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7gi1t"]
+font = ExtResource("7_kul4i")
+
+[node name="Game" type="Node2D" unique_id=166815257]
+script = ExtResource("1_qmv3x")
+
+[node name="GUI" type="CanvasLayer" parent="." unique_id=579421383]
+
+[node name="SideBar" type="Sprite2D" parent="GUI" unique_id=1692023032]
+position = Vector2(320, 180)
+texture = ExtResource("1_1r4le")
+
+[node name="CashCounter" type="Label" parent="GUI/SideBar" unique_id=697857134]
+texture_filter = 1
+offset_left = 232.0
+offset_top = -168.0
+offset_right = 308.0
+offset_bottom = -145.0
+text = "cash"
+label_settings = SubResource("LabelSettings_7gi1t")
+vertical_alignment = 1
+
+[node name="LivesCounter" type="Label" parent="GUI/SideBar" unique_id=616891940]
+texture_filter = 1
+offset_left = 232.0
+offset_top = -144.0
+offset_right = 308.0
+offset_bottom = -121.0
+text = "lives"
+label_settings = SubResource("LabelSettings_7gi1t")
+vertical_alignment = 1
+
+[node name="SpeedButton" type="Sprite2D" parent="GUI/SideBar" unique_id=464259977]
+texture = ExtResource("2_jcm6v")
+
+[node name="PauseButton" type="Sprite2D" parent="GUI/SideBar" unique_id=1298304892]
+texture = ExtResource("3_fwxkx")
+
+[node name="Slots" type="Node2D" parent="GUI/SideBar" unique_id=844756587]
+
+[node name="Slot" parent="GUI/SideBar/Slots" unique_id=565799523 instance=ExtResource("5_oomkl")]
+position = Vector2(235, -58)
+monkeyResource = ExtResource("6_buohc")
+
+[node name="Slot2" parent="GUI/SideBar/Slots" unique_id=1270855823 instance=ExtResource("5_oomkl")]
+position = Vector2(279, -58)
+
+[node name="Slot3" parent="GUI/SideBar/Slots" unique_id=1874524188 instance=ExtResource("5_oomkl")]
+position = Vector2(235, -14)
+
+[node name="Slot4" parent="GUI/SideBar/Slots" unique_id=1614040648 instance=ExtResource("5_oomkl")]
+position = Vector2(279, -14)
+
+[node name="Slot5" parent="GUI/SideBar/Slots" unique_id=984237912 instance=ExtResource("5_oomkl")]
+position = Vector2(235, 30)
+
+[node name="Slot6" parent="GUI/SideBar/Slots" unique_id=1897836405 instance=ExtResource("5_oomkl")]
+position = Vector2(279, 30)
+
+[node name="Slot7" parent="GUI/SideBar/Slots" unique_id=997238117 instance=ExtResource("5_oomkl")]
+position = Vector2(235, 74)
+
+[node name="Slot8" parent="GUI/SideBar/Slots" unique_id=673002914 instance=ExtResource("5_oomkl")]
+position = Vector2(279, 74)
+
+[node name="testScene" parent="." unique_id=1462393471 instance=ExtResource("1_bk3v5")]
+z_index = -2
+
+[node name="Monkeys" type="Node2D" parent="." unique_id=1581521921]
+
+[node name="Projectiles" type="Node2D" parent="." unique_id=736204496]

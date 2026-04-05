@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cojsdys6olduo"
-path="res://.godot/imported/circleOutside.png-29c2e3369c715f73ff75e44eb895f417.ctex"
+uid="uid://dmypreh71xvjq"
+path="res://.godot/imported/speedButtonBase.png-ad97f575088529add0e4bec348af1e65.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Monkeys/circleOutside.png"
-dest_files=["res://.godot/imported/circleOutside.png-29c2e3369c715f73ff75e44eb895f417.ctex"]
+source_file="res://UI/SideBar/speedButtonBase.png"
+dest_files=["res://.godot/imported/speedButtonBase.png-ad97f575088529add0e4bec348af1e65.ctex"]
 
 [params]
 

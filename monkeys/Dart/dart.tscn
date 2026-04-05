@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://caq4vwhd2kdio"]
+
+[ext_resource type="Script" uid="uid://bkcqt5o5w8inr" path="res://monkeys/Projectile.gd" id="1_mwfkl"]
+[ext_resource type="Texture2D" uid="uid://n41vf62ee3vn" path="res://monkeys/Dart/dart.png" id="2_mohrd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mohrd"]
+radius = 5.0
+
+[node name="Dart" type="CharacterBody2D" unique_id=1412085319 node_paths=PackedStringArray("collisionArea")]
+script = ExtResource("1_mwfkl")
+collisionArea = NodePath("Area2D")
+metadata/_custom_type_script = "uid://bkcqt5o5w8inr"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=454501362]
+rotation = 1.5707964
+texture = ExtResource("2_mohrd")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1052885872]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=2043778823]
+shape = SubResource("CircleShape2D_mohrd")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df04nmmcfyyqy"
-path="res://.godot/imported/BaseApe.png-b96185d84aa847b094bb63151122dcbd.ctex"
+uid="uid://n41vf62ee3vn"
+path="res://.godot/imported/dart.png-be7fcb4068688cd6f448f6285c4f4d02.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Monkeys/Dart/BaseApe.png"
-dest_files=["res://.godot/imported/BaseApe.png-b96185d84aa847b094bb63151122dcbd.ctex"]
+source_file="res://monkeys/Dart/dart.png"
+dest_files=["res://.godot/imported/dart.png-be7fcb4068688cd6f448f6285c4f4d02.ctex"]
 
 [params]
 

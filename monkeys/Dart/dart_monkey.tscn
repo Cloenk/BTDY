@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bfi8vruvy5tm1"]
+
+[ext_resource type="Script" uid="uid://bvb2uebkd304u" path="res://monkeys/Monkey.gd" id="1_wbyra"]
+[ext_resource type="Texture2D" uid="uid://df04nmmcfyyqy" path="res://monkeys/Dart/BaseApe.png" id="2_48hjs"]
+[ext_resource type="Script" uid="uid://cx1llvyrtdrg3" path="res://monkeys/Components/Visuals/VisualsComponent.gd" id="2_jdi26"]
+[ext_resource type="Script" uid="uid://d1wlhqdvkmynj" path="res://monkeys/Components/Range/RangeComponent.gd" id="4_cdnm3"]
+[ext_resource type="Script" uid="uid://b6owkyk8vi0qj" path="res://monkeys/Components/Attack/AttackComponent.gd" id="5_klg10"]
+[ext_resource type="PackedScene" uid="uid://caq4vwhd2kdio" path="res://monkeys/Dart/dart.tscn" id="6_f6f2g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f6f2g"]
+radius = 12.0
+
+[node name="DartMonkey" type="CharacterBody2D" unique_id=294957582 node_paths=PackedStringArray("components", "obstacleCheckArea")]
+script = ExtResource("1_wbyra")
+components = [NodePath("VisualsComponent"), NodePath("RangeComponent"), NodePath("AttackComponent")]
+obstacleCheckArea = NodePath("obstacleCheck")
+metadata/_custom_type_script = "uid://bvb2uebkd304u"
+
+[node name="VisualsComponent" type="Node2D" parent="." unique_id=986258538]
+script = ExtResource("2_jdi26")
+texture = ExtResource("2_48hjs")
+metadata/_custom_type_script = "uid://cx1llvyrtdrg3"
+
+[node name="RangeComponent" type="Node2D" parent="." unique_id=1694266549]
+script = ExtResource("4_cdnm3")
+range = 4.0
+metadata/_custom_type_script = "uid://d1wlhqdvkmynj"
+
+[node name="AttackComponent" type="Node2D" parent="." unique_id=1119636419]
+script = ExtResource("5_klg10")
+projectileLifetime = 0.4
+projectileScene = ExtResource("6_f6f2g")
+purple = true
+metadata/_custom_type_script = "uid://b6owkyk8vi0qj"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1474820287]
+visible = false
+shape = SubResource("CircleShape2D_f6f2g")
+
+[node name="obstacleCheck" type="Area2D" parent="." unique_id=1066670287]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="obstacleCheck" unique_id=1282070751]
+shape = SubResource("CircleShape2D_f6f2g")

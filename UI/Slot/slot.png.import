@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2ykewsivdtbd"
-path="res://.godot/imported/circleInside.png-5a1e34557468ec58af9c9c1ec2108c3c.ctex"
+uid="uid://ddu70aeke22j1"
+path="res://.godot/imported/slot.png-e56d61d170e840c373e97b5fe3c8c677.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Monkeys/circleInside.png"
-dest_files=["res://.godot/imported/circleInside.png-5a1e34557468ec58af9c9c1ec2108c3c.ctex"]
+source_file="res://UI/Slot/slot.png"
+dest_files=["res://.godot/imported/slot.png-e56d61d170e840c373e97b5fe3c8c677.ctex"]
 
 [params]
 

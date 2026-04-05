@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://vjlohqccjwbb"]
+
+[ext_resource type="Texture2D" uid="uid://ddu70aeke22j1" path="res://UI/Slot/slot.png" id="1_7r1i2"]
+[ext_resource type="Script" uid="uid://dri2th743avfv" path="res://UI/Slot/slot.gd" id="1_etr5n"]
+
+[node name="Slot" type="Node2D" unique_id=565799523]
+script = ExtResource("1_etr5n")
+
+[node name="BG" type="Sprite2D" parent="." unique_id=1829342725]
+texture = ExtResource("1_7r1i2")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1360778343]
+scale = Vector2(0.7, 0.7)
+
+[node name="Button" type="Button" parent="." unique_id=334697887]
+modulate = Color(1, 1, 1, 0)
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -44,6 +44,9 @@ speed = 3.5
 sprite = ExtResource("7_8g5nn")
 metadata/_custom_type_script = "uid://crtey2lshgeu0"
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_uco6b"]
+radius = 9.0
+
 [node name="BasicBloon" type="CharacterBody2D" unique_id=1251175261 node_paths=PackedStringArray("sprite")]
 script = ExtResource("1_r5j4i")
 hp = 1.0
@@ -52,3 +55,7 @@ sprite = NodePath("Sprite2D")
 metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1270699119]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=428571058]
+visible = false
+shape = SubResource("CircleShape2D_uco6b")

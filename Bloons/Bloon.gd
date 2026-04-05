@@ -6,7 +6,6 @@ class_name Bloon
 @export var speed: float = 0
 @export var density: float = 1
 @export var progress: float = 0
-@export var projBlackList: Array[Projectile]
 @export var sprite: Sprite2D
 @export var camo: bool = false
 @export var lead: bool = false
@@ -16,7 +15,7 @@ class_name Bloon
 @export var moab: bool = false
 
 func _ready() -> void:
-	add_to_group("bool")
+	add_to_group("bloon")
 	setStats(getCurrentLayer())
 
 func damage(projectile: Projectile, doPopEffect: bool, overRideCanHit: bool, extraDamage: float):
@@ -28,8 +27,7 @@ func damage(projectile: Projectile, doPopEffect: bool, overRideCanHit: bool, ext
 			damageToDeal += projectile.moabBonus
 		if damageToDeal > 0:
 			split(projectile)
-			hp -= projectile.damage
-		projectile.pierce -= density
+			hp -= damageToDeal
 		if hp <= 0:
 			die()
 			return
@@ -39,7 +37,8 @@ func split(projectile: Projectile):
 	progress = get_parent().progress
 	var extraProgress = -15 * getCurrentLayer().bloonsToSplit.size()/2
 	for spawn in getCurrentLayer().bloonsToSplit:
-		var bloon: Bloon = Game.currentTrack.spawnBloon(spawn,progress+extraProgress)
+		var bloon: Bloon = GlobalGame.currentTrack.spawnBloon(spawn,progress+extraProgress)
+		projectile.hitBloons.append(bloon)
 		bloon.damage(projectile,false,false,-1)
 		extraProgress += 15
 
@@ -47,6 +46,7 @@ func canHit(projectile: Projectile):
 	if camo and !projectile.camo:
 		return false
 	if lead and !projectile.lead:
+		projectile.pierce = 0
 		return false
 	if purple and !projectile.purple:
 		return false

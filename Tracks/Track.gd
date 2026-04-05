@@ -6,10 +6,17 @@ var currentPath: int = 0
 var bloons: Array[Bloon] = []
 
 func _ready() -> void:
-	Game.currentTrack = self
+	GlobalGame.currentTrack = self
+
+func _process(delta: float) -> void:
+	for path in paths:
+		for follower: PathFollow2D in path.get_children():
+			follower.progress += follower.get_child(0).speed
 
 func spawnBloon(spawn: BloonSpawn, progress: float):
 	var pathFollower = PathFollow2D.new()
+	pathFollower.rotates = false
+	pathFollower.loop = false
 	pathFollower.progress = progress
 	getPath(currentPath).add_child(pathFollower)
 	var bloon: Bloon = spawn.scene.instantiate()

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://n41vf62ee3vn"
-path="res://.godot/imported/dart.png-dbda8eb1d43ae4578305f65b78fd961c.ctex"
+uid="uid://dwikhhp0kbp45"
+path="res://.godot/imported/sideBar.png-8e98444860c8e23d430d6f14f9f232fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Monkeys/Dart/dart.png"
-dest_files=["res://.godot/imported/dart.png-dbda8eb1d43ae4578305f65b78fd961c.ctex"]
+source_file="res://UI/SideBar/sideBar.png"
+dest_files=["res://.godot/imported/sideBar.png-8e98444860c8e23d430d6f14f9f232fc.ctex"]
 
 [params]
 
