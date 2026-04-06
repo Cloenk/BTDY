@@ -19,7 +19,7 @@ func _ready() -> void:
 	setStats(getCurrentLayer())
 
 func damage(projectile: Projectile, doPopEffect: bool, overRideCanHit: bool, extraDamage: float):
-	if canHit(projectile) or overRideCanHit:
+	if canHit(projectile) or overRideCanHit and hp > 0:
 		var damageToDeal = projectile.damage + extraDamage
 		if projectile.ceramicBonus and ceramic:
 			damageToDeal += projectile.ceramicBonus

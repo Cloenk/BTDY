@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://fj7xvii15lh4"
-path="res://.godot/imported/CeramicBloon.png-00411dd6f71782f567d4696d7ce63500.ctex"
+path="res://.godot/imported/CeramicBloon.png-40a3cf61d1bbfc53857d663ccf80c9a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Bloons/CeramicBloon.png"
-dest_files=["res://.godot/imported/CeramicBloon.png-00411dd6f71782f567d4696d7ce63500.ctex"]
+source_file="res://Bloons/ceramic/CeramicBloon.png"
+dest_files=["res://.godot/imported/CeramicBloon.png-40a3cf61d1bbfc53857d663ccf80c9a9.ctex"]
 
 [params]
 

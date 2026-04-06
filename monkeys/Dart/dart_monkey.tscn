@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bfi8vruvy5tm1"]
 
 [ext_resource type="Script" uid="uid://bvb2uebkd304u" path="res://monkeys/Monkey.gd" id="1_wbyra"]
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="2_1uwrn"]
 [ext_resource type="Texture2D" uid="uid://df04nmmcfyyqy" path="res://monkeys/Dart/BaseApe.png" id="2_48hjs"]
 [ext_resource type="Script" uid="uid://cx1llvyrtdrg3" path="res://monkeys/Components/Visuals/VisualsComponent.gd" id="2_jdi26"]
+[ext_resource type="Resource" uid="uid://c3vqhx2exjwbo" path="res://monkeys/Dart/upgrades/1.tres" id="3_6jqst"]
 [ext_resource type="Script" uid="uid://d1wlhqdvkmynj" path="res://monkeys/Components/Range/RangeComponent.gd" id="4_cdnm3"]
 [ext_resource type="Script" uid="uid://b6owkyk8vi0qj" path="res://monkeys/Components/Attack/AttackComponent.gd" id="5_klg10"]
 [ext_resource type="PackedScene" uid="uid://caq4vwhd2kdio" path="res://monkeys/Dart/dart.tscn" id="6_f6f2g"]
@@ -14,6 +16,7 @@ radius = 12.0
 script = ExtResource("1_wbyra")
 components = [NodePath("VisualsComponent"), NodePath("RangeComponent"), NodePath("AttackComponent")]
 obstacleCheckArea = NodePath("obstacleCheck")
+nextUpgrades = Array[ExtResource("2_1uwrn")]([ExtResource("3_6jqst")])
 metadata/_custom_type_script = "uid://bvb2uebkd304u"
 
 [node name="VisualsComponent" type="Node2D" parent="." unique_id=986258538]

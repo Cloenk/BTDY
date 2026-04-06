@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1re3akiyiqj5"
-path="res://.godot/imported/Pop.png-0c4d363b3ba20ab78865534cb6cf7a2c.ctex"
+uid="uid://decjjr5kyyifm"
+path="res://.godot/imported/LeadBloon.png-5b1fb89e1178e879c73bc49c885e2ceb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Bloons/Pop.png"
-dest_files=["res://.godot/imported/Pop.png-0c4d363b3ba20ab78865534cb6cf7a2c.ctex"]
+source_file="res://Bloons/lead/LeadBloon.png"
+dest_files=["res://.godot/imported/LeadBloon.png-5b1fb89e1178e879c73bc49c885e2ceb.ctex"]
 
 [params]
 

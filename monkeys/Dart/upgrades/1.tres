@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://c3vqhx2exjwbo"]
+
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_5cq8h"]
+[ext_resource type="Resource" uid="uid://b4qwwkwc4tc2k" path="res://monkeys/Dart/upgrades/2.tres" id="2_ma4g2"]
+
+[resource]
+script = ExtResource("1_5cq8h")
+UpgradeName = "harder throw"
+price = 150.0
+nextUpgrades = Array[ExtResource("1_5cq8h")]([ExtResource("2_ma4g2")])
+AddPierce = 1.0
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

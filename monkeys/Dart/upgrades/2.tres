@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://b4qwwkwc4tc2k"]
+
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_rvis7"]
+
+[resource]
+script = ExtResource("1_rvis7")
+UpgradeName = "enhanced eyesight"
+price = 215.0
+AddRange = 1.0
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

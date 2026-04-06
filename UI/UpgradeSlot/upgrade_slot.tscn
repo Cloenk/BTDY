@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dffakrli6u0vk"]
+
+[ext_resource type="Texture2D" uid="uid://ddu70aeke22j1" path="res://UI/Slot/slot.png" id="1_fmic4"]
+[ext_resource type="Script" uid="uid://uuan784ugu12" path="res://UI/UpgradeSlot/upgrade_slot.gd" id="1_ggaxn"]
+[ext_resource type="FontFile" uid="uid://ccib0iwsfj7nk" path="res://assets/fonts/edit-undo.brk.ttf" id="2_jvq2x"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jvq2x"]
+font = ExtResource("2_jvq2x")
+font_size = 12
+
+[node name="UpgradeSlot" type="Node2D" unique_id=400696289]
+script = ExtResource("1_ggaxn")
+
+[node name="BG" type="Sprite2D" parent="." unique_id=514699208]
+scale = Vector2(2, 1.5)
+texture = ExtResource("1_fmic4")
+
+[node name="NameLabel" type="Label" parent="." unique_id=1666451180]
+texture_filter = 1
+offset_left = -32.0
+offset_top = -24.0
+offset_right = 32.0
+offset_bottom = 24.0
+text = "BIG UPGRADE OF THE"
+label_settings = SubResource("LabelSettings_jvq2x")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="buyButton" type="Button" parent="." unique_id=1013701940]
+modulate = Color(1, 1, 1, 0)
+offset_left = -32.0
+offset_top = -24.0
+offset_right = 32.0
+offset_bottom = 24.0
+focus_mode = 0
+
+[connection signal="pressed" from="buyButton" to="." method="_on_buy_button_pressed"]

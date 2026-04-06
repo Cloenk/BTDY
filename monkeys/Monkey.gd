@@ -3,9 +3,11 @@ class_name Monkey
 
 @export var components: Array[Component] = []
 @export var obstacleCheckArea: Area2D
+@export var nextUpgrades: Array[Upgrade] = []
 var targetMode: String = "first"
 var placed: bool = false
 var canBePlaced: bool = true
+var pops: float = 0
 
 func _ready() -> void:
 	add_to_group("monkey")
@@ -24,6 +26,33 @@ func _process(delta: float) -> void:
 				rangeComponent.show()
 			else:
 				rangeComponent.hide()
+
+func getUpgrade(upgrade: Upgrade):
+	nextUpgrades = upgrade.nextUpgrades
+	var attackComponent: AttackComponent = get_component("attack")
+	if attackComponent:
+		attackComponent.damage += upgrade.AddDamage
+		attackComponent.pierce += upgrade.AddPierce
+		attackComponent.attackCooldown += upgrade.AddAttackCooldown
+		attackComponent.projectileSpeed += upgrade.AddProjectileSpeed
+		attackComponent.projectileLifetime += upgrade.AddProjectileLifetime
+		if upgrade.SetProjectileScene:
+			attackComponent.projectileScene = upgrade.SetProjectileScene
+		attackComponent.projectilesAtOnce += upgrade.AddProjectilesAtOnce
+		attackComponent.spreadAmount += upgrade.AddSpreadAmount
+		attackComponent.camo = upgrade.SetCamo
+		attackComponent.lead = upgrade.SetLead
+		attackComponent.purple = upgrade.SetPurple
+		attackComponent.ice = upgrade.SetIce
+		attackComponent.ceramicBonus += upgrade.AddCeramicBonus
+		attackComponent.moabBonus += upgrade.AddMoabBonus
+	var rangeComponent: RangeComponent = get_component("range")
+	if rangeComponent:
+		rangeComponent.range += upgrade.AddRange
+	var visualsComponent: VisualsComponent = get_component("visuals")
+	if visualsComponent:
+		if upgrade.SetTexture:
+			visualsComponent.texture = upgrade.SetTexture
 
 func checkIfCanBePlaced():
 	for body in obstacleCheckArea.get_overlapping_bodies():

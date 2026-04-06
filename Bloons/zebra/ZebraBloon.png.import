@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpieeuwmar08w"
-path="res://.godot/imported/CeramicBloonHalf.png-2dc728405b61b89879eb25200731ce53.ctex"
+uid="uid://c4e3ak8vpcbt8"
+path="res://.godot/imported/ZebraBloon.png-5122605f54aab8c74d68a05d505cdd5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Bloons/CeramicBloonHalf.png"
-dest_files=["res://.godot/imported/CeramicBloonHalf.png-2dc728405b61b89879eb25200731ce53.ctex"]
+source_file="res://Bloons/zebra/ZebraBloon.png"
+dest_files=["res://.godot/imported/ZebraBloon.png-5122605f54aab8c74d68a05d505cdd5d.ctex"]
 
 [params]
 

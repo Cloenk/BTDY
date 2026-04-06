@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://decjjr5kyyifm"
-path="res://.godot/imported/LeadBloon.png-2904cd001bc79ad523c1d7efa2fb2d5d.ctex"
+uid="uid://dwho5t15tnljj"
+path="res://.godot/imported/RainbowBloon.png-c2f29020d5ba6aaeb8220c8bd90e1518.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprites/Bloons/LeadBloon.png"
-dest_files=["res://.godot/imported/LeadBloon.png-2904cd001bc79ad523c1d7efa2fb2d5d.ctex"]
+source_file="res://Bloons/rainbow/RainbowBloon.png"
+dest_files=["res://.godot/imported/RainbowBloon.png-c2f29020d5ba6aaeb8220c8bd90e1518.ctex"]
 
 [params]
 

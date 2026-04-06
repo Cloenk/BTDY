@@ -2,17 +2,12 @@ extends Node2D
 @onready var monkeys: Node2D = $Monkeys
 @onready var projectiles: Node2D = $Projectiles
 @onready var slots: Node2D = $GUI/SideBar/Slots
-@onready var cash_counter: Label = $GUI/SideBar/CashCounter
-@onready var lives_counter: Label = $GUI/SideBar/LivesCounter
 
 func _ready() -> void:
 	GlobalGame.monkeys = monkeys
 	GlobalGame.Projectiles = projectiles
 
 func _process(delta: float) -> void:
-	cash_counter.text = str(GlobalGame.cash)
-	lives_counter.text = str(GlobalGame.lives)
-	
 	if GlobalGame.placingMonkey:
 		GlobalGame.placingMonkey.global_position = get_global_mouse_position()
 		
@@ -28,7 +23,7 @@ func _process(delta: float) -> void:
 		if Input.is_action_just_pressed("RMB"):
 			GlobalGame.selectedMonkey = null
 		
-		if Input.is_action_just_pressed("LMB"):
+		if Input.is_action_just_pressed("LMB") and get_global_mouse_position().x < 514:
 			var mousePos: Vector2 = get_global_mouse_position()
 			var closestMonkey: Monkey
 			for monkey: Monkey in monkeys.get_children():
