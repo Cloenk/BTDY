@@ -1,6 +1,6 @@
 extends Node
 
-var cash: int = 9999
+var cash: int = 99999
 var lives: int = 9999
 
 var currentTrack: Track

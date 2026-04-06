@@ -10,13 +10,12 @@ script = ExtResource("1_etr5n")
 texture = ExtResource("1_7r1i2")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1360778343]
-scale = Vector2(0.7, 0.7)
 
 [node name="Button" type="Button" parent="." unique_id=334697887]
 modulate = Color(1, 1, 1, 0)
-offset_left = -16.0
-offset_top = -16.0
-offset_right = 16.0
-offset_bottom = 16.0
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="MonkeyResource" format=3 uid="uid://c40m4b0chx57m"]
 
 [ext_resource type="Script" uid="uid://blefff1uurr5p" path="res://monkeys/MonkeyResource.gd" id="1_albyr"]
-[ext_resource type="Texture2D" uid="uid://df04nmmcfyyqy" path="res://monkeys/Dart/BaseApe.png" id="1_km5m0"]
+[ext_resource type="Texture2D" uid="uid://df04nmmcfyyqy" path="res://monkeys/Dart/sprites/BaseApe.png" id="1_km5m0"]
 [ext_resource type="PackedScene" uid="uid://bfi8vruvy5tm1" path="res://monkeys/Dart/dart_monkey.tscn" id="2_uruiw"]
 
 [resource]

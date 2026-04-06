@@ -38,7 +38,8 @@ func _process(delta: float) -> void:
 func attack(target: Bloon):
 	host.get_component("visuals").look_at(target.global_position)
 	look_at(target.global_position)
-	var rot = spreadAmount * projectilesAtOnce / 2
+	var rot = spreadAmount * projectilesAtOnce
+	rot /= 2
 	for i in projectilesAtOnce:
 		var proj: Projectile = projectileScene.instantiate()
 		proj.damage = damage
@@ -48,7 +49,7 @@ func attack(target: Bloon):
 		proj.rotation = rotation + rot
 		proj.global_position = global_position
 		GlobalGame.Projectiles.add_child(proj)
-		rot += spreadAmount
+		rot -= spreadAmount
 
 func reset():
 	canAttack = true

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://csychg8n4h5u1"]
+
+[ext_resource type="Texture2D" uid="uid://crj83qrucxk5o" path="res://monkeys/Dart/sprites/BaseApe3XX.png" id="1_g7axs"]
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_qhkmx"]
+
+[resource]
+script = ExtResource("1_qhkmx")
+UpgradeName = "super charged"
+price = 5400.0
+AddAttackCooldown = -0.1
+AddProjectilesAtOnce = 2.0
+SetCamo = true
+SetTexture = ExtResource("1_g7axs")
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

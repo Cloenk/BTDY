@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://bmtvj251nvlle"]
+
+[ext_resource type="Texture2D" uid="uid://b278xlfym52d1" path="res://monkeys/Dart/sprites/BaseApeX1X.png" id="1_eq201"]
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_j7b5s"]
+[ext_resource type="Resource" uid="uid://hql7xpm3lvta" path="res://monkeys/Dart/upgrades/X2X.tres" id="2_fihsm"]
+
+[resource]
+script = ExtResource("1_j7b5s")
+UpgradeName = "sharp shots"
+price = 315.0
+nextUpgrades = Array[ExtResource("1_j7b5s")]([ExtResource("2_fihsm")])
+AddDamage = 1.0
+AddPierce = 1.0
+SetCamo = true
+SetTexture = ExtResource("1_eq201")
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

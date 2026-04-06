@@ -11,3 +11,5 @@ func _ready() -> void:
 	sprite.texture = texture
 	sprite.rotation_degrees = 90
 	add_child(sprite)
+func _process(delta: float) -> void:
+	sprite.texture = texture

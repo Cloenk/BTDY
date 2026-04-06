@@ -1,10 +1,16 @@
 [gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://b4qwwkwc4tc2k"]
 
 [ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_rvis7"]
+[ext_resource type="Texture2D" uid="uid://dc1rpw4e7dulb" path="res://monkeys/Dart/sprites/BaseApe2.png" id="1_tlm67"]
+[ext_resource type="Resource" uid="uid://2sl43nhvn0nr" path="res://monkeys/Dart/upgrades/1XX.tres" id="2_xy6ts"]
+[ext_resource type="Resource" uid="uid://bmtvj251nvlle" path="res://monkeys/Dart/upgrades/X1X.tres" id="3_eopdq"]
 
 [resource]
 script = ExtResource("1_rvis7")
 UpgradeName = "enhanced eyesight"
 price = 215.0
+nextUpgrades = Array[ExtResource("1_rvis7")]([ExtResource("2_xy6ts"), ExtResource("3_eopdq")])
+SetCamo = true
 AddRange = 1.0
+SetTexture = ExtResource("1_tlm67")
 metadata/_custom_type_script = "uid://ks8wmrxlxc18"

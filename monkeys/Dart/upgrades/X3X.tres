@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://bq11w5htvql7m"]
+
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_tbwpx"]
+[ext_resource type="Texture2D" uid="uid://cmkc84g2plfgf" path="res://monkeys/Dart/sprites/BaseApeX3X.png" id="1_xywqp"]
+
+[resource]
+script = ExtResource("1_tbwpx")
+UpgradeName = "sniper"
+price = 10000.0
+AddDamage = 15.0
+AddPierce = 10.0
+AddProjectileSpeed = 500.0
+SetCamo = true
+SetLead = true
+SetIce = true
+AddRange = 4.0
+SetTexture = ExtResource("1_xywqp")
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

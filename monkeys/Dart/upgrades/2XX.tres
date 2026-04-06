@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://bcrrdkwjy2dn4"]
+
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_qn5db"]
+[ext_resource type="Texture2D" uid="uid://dos54l5q5wt0u" path="res://monkeys/Dart/sprites/BaseApe2XX.png" id="1_w7r2y"]
+[ext_resource type="Resource" uid="uid://csychg8n4h5u1" path="res://monkeys/Dart/upgrades/3XX.tres" id="2_utt21"]
+
+[resource]
+script = ExtResource("1_qn5db")
+UpgradeName = "ROBO monkey"
+price = 1200.0
+nextUpgrades = Array[ExtResource("1_qn5db")]([ExtResource("2_utt21")])
+AddAttackCooldown = -0.4
+AddSpreadAmount = -0.1
+SetCamo = true
+SetTexture = ExtResource("1_w7r2y")
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

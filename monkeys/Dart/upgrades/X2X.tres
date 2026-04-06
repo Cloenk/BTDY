@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://hql7xpm3lvta"]
+
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_j7b5s"]
+[ext_resource type="Texture2D" uid="uid://dxeuwf036eh4m" path="res://monkeys/Dart/sprites/BaseApeX2X.png" id="1_smklr"]
+[ext_resource type="Resource" uid="uid://bq11w5htvql7m" path="res://monkeys/Dart/upgrades/X3X.tres" id="2_j7b5s"]
+
+[resource]
+script = ExtResource("1_j7b5s")
+UpgradeName = "crossbow"
+price = 1300.0
+nextUpgrades = Array[ExtResource("1_j7b5s")]([ExtResource("2_j7b5s")])
+AddDamage = 3.0
+AddPierce = 2.0
+AddProjectileSpeed = 250.0
+SetCamo = true
+AddRange = 2.0
+SetTexture = ExtResource("1_smklr")
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

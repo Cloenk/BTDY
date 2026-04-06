@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Upgrade" format=3 uid="uid://2sl43nhvn0nr"]
+
+[ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="1_55d8y"]
+[ext_resource type="Texture2D" uid="uid://bqhk25aq82ijn" path="res://monkeys/Dart/sprites/BaseApe1XX.png" id="1_xmbim"]
+[ext_resource type="Resource" uid="uid://bcrrdkwjy2dn4" path="res://monkeys/Dart/upgrades/2XX.tres" id="2_rhndg"]
+
+[resource]
+script = ExtResource("1_55d8y")
+UpgradeName = "tripple shot"
+price = 485.0
+nextUpgrades = Array[ExtResource("1_55d8y")]([ExtResource("2_rhndg")])
+AddAttackCooldown = -0.3
+AddProjectilesAtOnce = 2.0
+AddSpreadAmount = 0.2
+SetCamo = true
+SetTexture = ExtResource("1_xmbim")
+metadata/_custom_type_script = "uid://ks8wmrxlxc18"

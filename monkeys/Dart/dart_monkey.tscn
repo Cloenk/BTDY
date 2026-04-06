@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bvb2uebkd304u" path="res://monkeys/Monkey.gd" id="1_wbyra"]
 [ext_resource type="Script" uid="uid://ks8wmrxlxc18" path="res://monkeys/upgrade.gd" id="2_1uwrn"]
-[ext_resource type="Texture2D" uid="uid://df04nmmcfyyqy" path="res://monkeys/Dart/BaseApe.png" id="2_48hjs"]
+[ext_resource type="Texture2D" uid="uid://df04nmmcfyyqy" path="res://monkeys/Dart/sprites/BaseApe.png" id="2_48hjs"]
 [ext_resource type="Script" uid="uid://cx1llvyrtdrg3" path="res://monkeys/Components/Visuals/VisualsComponent.gd" id="2_jdi26"]
 [ext_resource type="Resource" uid="uid://c3vqhx2exjwbo" path="res://monkeys/Dart/upgrades/1.tres" id="3_6jqst"]
 [ext_resource type="Script" uid="uid://d1wlhqdvkmynj" path="res://monkeys/Components/Range/RangeComponent.gd" id="4_cdnm3"]

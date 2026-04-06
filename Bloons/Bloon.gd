@@ -35,12 +35,13 @@ func damage(projectile: Projectile, doPopEffect: bool, overRideCanHit: bool, ext
 
 func split(projectile: Projectile):
 	progress = get_parent().progress
-	var extraProgress = -15 * getCurrentLayer().bloonsToSplit.size()/2
-	for spawn in getCurrentLayer().bloonsToSplit:
-		var bloon: Bloon = GlobalGame.currentTrack.spawnBloon(spawn,progress+extraProgress)
-		projectile.hitBloons.append(bloon)
-		bloon.damage(projectile,false,false,-1)
-		extraProgress += 15
+	if getCurrentLayer():
+		var extraProgress = -15 * getCurrentLayer().bloonsToSplit.size()/2
+		for spawn in getCurrentLayer().bloonsToSplit:
+			var bloon: Bloon = GlobalGame.currentTrack.spawnBloon(spawn,progress+extraProgress)
+			projectile.hitBloons.append(bloon)
+			bloon.damage(projectile,false,false,-1)
+			extraProgress += 15
 
 func canHit(projectile: Projectile):
 	if camo and !projectile.camo:

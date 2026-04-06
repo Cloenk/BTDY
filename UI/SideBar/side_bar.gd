@@ -21,6 +21,8 @@ func _process(delta: float) -> void:
 				upgradeSlot.upgrade = null
 		if GlobalGame.selectedMonkey.nextUpgrades.size() == 1:
 			upgrade_slot_middle.upgrade = GlobalGame.selectedMonkey.nextUpgrades[0]
+			upgrade_slot_bottom.upgrade = null
+			upgrade_slot_top.upgrade = null
 		else:
 			for i in GlobalGame.selectedMonkey.nextUpgrades.size():
 				upgrade_slots.get_child(i).upgrade = GlobalGame.selectedMonkey.nextUpgrades[i]
