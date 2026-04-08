@@ -8,7 +8,7 @@
 
 [sub_resource type="Resource" id="Resource_uid8j"]
 script = ExtResource("2_m1b6i")
-hpRange = Vector2(1, 1)
+hpRange = Vector2(0, 1)
 speed = 1.6
 sprite = ExtResource("4_o0htx")
 bloonsToSplit = Array[ExtResource("3_8mi6b")]([ExtResource("4_8mi6b"), ExtResource("4_8mi6b")])

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cvtwohgmmmcjs"]
+
+[ext_resource type="Script" uid="uid://dw2vsqf5u5ywj" path="res://Bloons/Bloon.gd" id="1_ilbor"]
+[ext_resource type="Script" uid="uid://crtey2lshgeu0" path="res://Bloons/Layer.gd" id="2_d0tb5"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="3_3tk5w"]
+[ext_resource type="Texture2D" uid="uid://decjjr5kyyifm" path="res://Bloons/lead/LeadBloon.png" id="4_3tk5w"]
+[ext_resource type="Resource" uid="uid://cjbuimbmqdo1p" path="res://Bloons/Black/blackSpawn.tres" id="4_lielo"]
+
+[sub_resource type="Resource" id="Resource_lielo"]
+script = ExtResource("2_d0tb5")
+hpRange = Vector2(0, 1)
+speed = 1.0
+sprite = ExtResource("4_3tk5w")
+lead = true
+bloonsToSplit = Array[ExtResource("3_3tk5w")]([ExtResource("4_lielo"), ExtResource("4_lielo")])
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rwiyw"]
+radius = 9.0
+
+[node name="LeadBloon" type="CharacterBody2D" unique_id=765571215 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_ilbor")
+layers = Array[ExtResource("2_d0tb5")]([SubResource("Resource_lielo")])
+sprite = NodePath("Sprite2D")
+metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=147266462]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=196702318]
+visible = false
+shape = SubResource("CircleShape2D_rwiyw")

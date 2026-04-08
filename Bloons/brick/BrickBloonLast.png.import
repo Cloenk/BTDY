@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0x776kaet0a4"
-path="res://.godot/imported/BrickBloon.png-2f0a1c03f19a22fe0e36a2a8e8f31975.ctex"
+uid="uid://8i63tex0ny40"
+path="res://.godot/imported/BrickBloonLast.png-f58367d55791de47572da2577737a774.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bloons/ceramic/BrickBloon.png"
-dest_files=["res://.godot/imported/BrickBloon.png-2f0a1c03f19a22fe0e36a2a8e8f31975.ctex"]
+source_file="res://Bloons/brick/BrickBloonLast.png"
+dest_files=["res://.godot/imported/BrickBloonLast.png-f58367d55791de47572da2577737a774.ctex"]
 
 [params]
 

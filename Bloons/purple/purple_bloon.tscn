@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cdsrwsn0hwu87"]
+
+[ext_resource type="Script" uid="uid://dw2vsqf5u5ywj" path="res://Bloons/Bloon.gd" id="1_rtx41"]
+[ext_resource type="Script" uid="uid://crtey2lshgeu0" path="res://Bloons/Layer.gd" id="2_msnkf"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="3_kdcic"]
+[ext_resource type="Resource" uid="uid://bvbqvjgskmcbc" path="res://Bloons/Basic/PinkSpawn.tres" id="4_6lvny"]
+[ext_resource type="Texture2D" uid="uid://glp5t0420o5" path="res://Bloons/purple/PurpleBloon.png" id="4_kdcic"]
+
+[sub_resource type="Resource" id="Resource_6lvny"]
+script = ExtResource("2_msnkf")
+hpRange = Vector2(0, 1)
+speed = 3.0
+sprite = ExtResource("4_kdcic")
+purple = true
+bloonsToSplit = Array[ExtResource("3_kdcic")]([ExtResource("4_6lvny"), ExtResource("4_6lvny")])
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rtx41"]
+radius = 9.0
+
+[node name="PurpleBloon" type="CharacterBody2D" unique_id=1012696915 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_rtx41")
+layers = Array[ExtResource("2_msnkf")]([SubResource("Resource_6lvny")])
+sprite = NodePath("Sprite2D")
+metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1902608758]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1132022088]
+visible = false
+shape = SubResource("CircleShape2D_rtx41")

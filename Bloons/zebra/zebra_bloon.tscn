@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c4um5t28a7nbk"]
+
+[ext_resource type="Script" uid="uid://dw2vsqf5u5ywj" path="res://Bloons/Bloon.gd" id="1_duuj3"]
+[ext_resource type="Script" uid="uid://crtey2lshgeu0" path="res://Bloons/Layer.gd" id="2_i4pkp"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="3_qabj8"]
+[ext_resource type="Resource" uid="uid://cjbuimbmqdo1p" path="res://Bloons/Black/blackSpawn.tres" id="4_qgp1w"]
+[ext_resource type="Texture2D" uid="uid://c4e3ak8vpcbt8" path="res://Bloons/zebra/ZebraBloon.png" id="4_vuy3c"]
+[ext_resource type="Resource" uid="uid://c10k4pk83hedx" path="res://Bloons/White/whiteSpawn.tres" id="5_pmacs"]
+
+[sub_resource type="Resource" id="Resource_qgp1w"]
+script = ExtResource("2_i4pkp")
+hpRange = Vector2(0, 1)
+speed = 1.8
+sprite = ExtResource("4_vuy3c")
+bloonsToSplit = Array[ExtResource("3_qabj8")]([ExtResource("4_qgp1w"), ExtResource("5_pmacs")])
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_duuj3"]
+radius = 9.0
+
+[node name="ZebraBloon" type="CharacterBody2D" unique_id=1117213797 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_duuj3")
+hp = 1.0
+layers = Array[ExtResource("2_i4pkp")]([SubResource("Resource_qgp1w")])
+sprite = NodePath("Sprite2D")
+metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1512126839]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1915172573]
+visible = false
+shape = SubResource("CircleShape2D_duuj3")

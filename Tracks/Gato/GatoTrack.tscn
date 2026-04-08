@@ -3,13 +3,7 @@
 [ext_resource type="Script" uid="uid://6pslsdsvvaxk" path="res://Tracks/Gato/GatoTrack.gd" id="1_ia1lp"]
 [ext_resource type="Texture2D" uid="uid://dexc3lwqsgief" path="res://Screenshot from 2026-04-05 15-54-14.png" id="2_ia1lp"]
 [ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="2_vr1i5"]
-[ext_resource type="Resource" uid="uid://cc1f450aam0a4" path="res://Bloons/Basic/blueSpawn.tres" id="3_rpuu0"]
-[ext_resource type="Resource" uid="uid://otmfb1cp12hr" path="res://Bloons/Basic/greenSpawn.tres" id="4_oo8pe"]
-[ext_resource type="Resource" uid="uid://bvbqvjgskmcbc" path="res://Bloons/Basic/PinkSpawn.tres" id="5_4gito"]
-[ext_resource type="Resource" uid="uid://cuow5v3ubn558" path="res://Bloons/Basic/redSpawn.tres" id="6_fbuy2"]
-[ext_resource type="Resource" uid="uid://od15id0csnb6" path="res://Bloons/Basic/YellowSpawn.tres" id="7_0k8yu"]
-[ext_resource type="Resource" uid="uid://cjbuimbmqdo1p" path="res://Bloons/Black/blackSpawn.tres" id="8_hiucn"]
-[ext_resource type="Resource" uid="uid://c10k4pk83hedx" path="res://Bloons/White/whiteSpawn.tres" id="9_k6its"]
+[ext_resource type="Resource" uid="uid://vq8qt8o4bqyg" path="res://Bloons/zebra/zebraSpawn.tres" id="3_62jui"]
 
 [sub_resource type="Curve2D" id="Curve2D_ia1lp"]
 _data = {
@@ -20,7 +14,7 @@ point_count = 30
 [node name="GatoTrack" type="Node2D" unique_id=1462393471 node_paths=PackedStringArray("paths")]
 position = Vector2(-1, 0)
 script = ExtResource("1_ia1lp")
-allBloons = Array[ExtResource("2_vr1i5")]([ExtResource("3_rpuu0"), ExtResource("4_oo8pe"), ExtResource("5_4gito"), ExtResource("6_fbuy2"), ExtResource("7_0k8yu"), ExtResource("8_hiucn"), ExtResource("9_k6its")])
+allBloons = Array[ExtResource("2_vr1i5")]([ExtResource("3_62jui")])
 paths = [NodePath("Path2D")]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1903820628]

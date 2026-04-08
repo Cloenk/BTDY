@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="BloonSpawn" format=3 uid="uid://cy7dnrx6k0hm0"]
+
+[ext_resource type="PackedScene" uid="uid://cvtwohgmmmcjs" path="res://Bloons/lead/lead_bloon.tscn" id="1_f5nbw"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="2_gpyrv"]
+
+[resource]
+script = ExtResource("2_gpyrv")
+scene = ExtResource("1_f5nbw")
+metadata/_custom_type_script = "uid://c6xkdsmd0nboo"

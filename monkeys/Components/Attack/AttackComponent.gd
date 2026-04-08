@@ -48,6 +48,12 @@ func attack(target: Bloon):
 		proj.pierce = pierce
 		proj.rotation = rotation + rot
 		proj.global_position = global_position
+		proj.camo = camo
+		proj.lead = lead
+		proj.purple = purple
+		proj.ice = ice
+		proj.ceramicBonus = ceramicBonus
+		proj.moabBonus = moabBonus
 		GlobalGame.Projectiles.add_child(proj)
 		rot -= spreadAmount
 

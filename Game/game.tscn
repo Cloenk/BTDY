@@ -10,6 +10,8 @@
 [ext_resource type="Resource" uid="uid://c40m4b0chx57m" path="res://monkeys/Dart/dartResource.tres" id="6_buohc"]
 [ext_resource type="FontFile" uid="uid://ccib0iwsfj7nk" path="res://assets/fonts/edit-undo.brk.ttf" id="7_kul4i"]
 [ext_resource type="PackedScene" uid="uid://dffakrli6u0vk" path="res://UI/UpgradeSlot/upgrade_slot.tscn" id="8_kul4i"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="11_glinl"]
+[ext_resource type="Resource" uid="uid://bs5i4qv5h5621" path="res://Bloons/purple/purpleBloon.tres" id="12_glinl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7gi1t"]
 font = ExtResource("7_kul4i")
@@ -94,6 +96,7 @@ position = Vector2(257, -12)
 
 [node name="testScene" parent="." unique_id=1462393471 instance=ExtResource("1_bk3v5")]
 z_index = -2
+allBloons = Array[ExtResource("11_glinl")]([ExtResource("12_glinl")])
 
 [node name="Monkeys" type="Node2D" parent="." unique_id=1581521921]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dkhe01tq0sgeo"
-path="res://.godot/imported/BrickBloonHalf.png-9ba4f0ba2a0d0b1b11fded46d9ac0275.ctex"
+path="res://.godot/imported/BrickBloonHalf.png-ad8a9caebd198b5e2eacc145d7409ce0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bloons/ceramic/BrickBloonHalf.png"
-dest_files=["res://.godot/imported/BrickBloonHalf.png-9ba4f0ba2a0d0b1b11fded46d9ac0275.ctex"]
+source_file="res://Bloons/brick/BrickBloonHalf.png"
+dest_files=["res://.godot/imported/BrickBloonHalf.png-ad8a9caebd198b5e2eacc145d7409ce0.ctex"]
 
 [params]
 

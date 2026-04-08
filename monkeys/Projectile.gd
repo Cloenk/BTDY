@@ -8,6 +8,7 @@ class_name Projectile
 @export var lifetime: float = 1
 @export var camo: bool = false
 @export var lead: bool = false
+@export var ice: bool = false
 @export var purple: bool = false
 @export var ceramicBonus: float = 0
 @export var moabBonus: float = 0

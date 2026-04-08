@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://5jqw3h2kxbt"]
+
+[ext_resource type="Script" uid="uid://dw2vsqf5u5ywj" path="res://Bloons/Bloon.gd" id="1_7xt85"]
+[ext_resource type="Script" uid="uid://crtey2lshgeu0" path="res://Bloons/Layer.gd" id="2_ncjl5"]
+[ext_resource type="Script" uid="uid://c6xkdsmd0nboo" path="res://Bloons/BloonSpawn.gd" id="3_k676d"]
+[ext_resource type="Texture2D" uid="uid://8i63tex0ny40" path="res://Bloons/brick/BrickBloonLast.png" id="4_c8j8i"]
+[ext_resource type="Resource" uid="uid://cdecp3klyp1mn" path="res://Bloons/ceramic/ceramicSpawn.tres" id="4_k676d"]
+[ext_resource type="Texture2D" uid="uid://dkhe01tq0sgeo" path="res://Bloons/brick/BrickBloonHalf.png" id="6_c8j8i"]
+[ext_resource type="Texture2D" uid="uid://d0x776kaet0a4" path="res://Bloons/brick/BrickBloon.png" id="7_3cvgq"]
+
+[sub_resource type="Resource" id="Resource_3cvgq"]
+script = ExtResource("2_ncjl5")
+hpRange = Vector2(0, 7)
+speed = 0.8
+density = 2.0
+sprite = ExtResource("4_c8j8i")
+bloonsToSplit = Array[ExtResource("3_k676d")]([ExtResource("4_k676d"), ExtResource("4_k676d")])
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="Resource" id="Resource_hq287"]
+script = ExtResource("2_ncjl5")
+hpRange = Vector2(8, 14)
+speed = 0.8
+density = 2.0
+sprite = ExtResource("6_c8j8i")
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="Resource" id="Resource_n3ryd"]
+script = ExtResource("2_ncjl5")
+hpRange = Vector2(15, 20)
+speed = 0.8
+density = 2.0
+sprite = ExtResource("7_3cvgq")
+metadata/_custom_type_script = "uid://crtey2lshgeu0"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n0ikt"]
+radius = 9.0
+
+[node name="BrickBloon" type="CharacterBody2D" unique_id=1029766405 node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_7xt85")
+layers = Array[ExtResource("2_ncjl5")]([SubResource("Resource_3cvgq"), SubResource("Resource_hq287"), SubResource("Resource_n3ryd")])
+sprite = NodePath("Sprite2D")
+metadata/_custom_type_script = "uid://dw2vsqf5u5ywj"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=849396872]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=996130845]
+visible = false
+shape = SubResource("CircleShape2D_n0ikt")

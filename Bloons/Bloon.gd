@@ -26,9 +26,9 @@ func damage(projectile: Projectile, doPopEffect: bool, overRideCanHit: bool, ext
 		if projectile.moabBonus and moab:
 			damageToDeal += projectile.moabBonus
 		if damageToDeal > 0:
-			split(projectile)
 			hp -= damageToDeal
 		if hp <= 0:
+			split(projectile)
 			die()
 			return
 		setStats(getCurrentLayer())
@@ -49,7 +49,7 @@ func canHit(projectile: Projectile):
 	if lead and !projectile.lead:
 		projectile.pierce = 0
 		return false
-	if purple and !projectile.purple:
+	if purple and projectile.purple:
 		return false
 	return true
 
@@ -66,7 +66,7 @@ func setStats(layer: Layer):
 
 func getCurrentLayer():
 	for layer in layers:
-		if layer.hpRange.x >= hp and layer.hpRange.y <= hp:
+		if layer.hpRange.x <= hp and layer.hpRange.y >= hp:
 			return layer
 
 func _process(delta: float) -> void:
